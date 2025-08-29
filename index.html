@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title id="pageTitle"></title>
+<script>
+  /* 게임 설정 및 문제 데이터 */
+  const gameConfig = {
+    "gameTitle": "실모 사설 4회 미적분",
+    "defaultScore": 0,
+    "bannerURL": "",
+    "randomizeQuestions": false,
+    "questions": [
+      {
+        "id": 1,
+        "images": ["https://raw.githubusercontent.com/hwimath3/7452/main/1.png"],
+        "passage": "",
+        "answer": "3",
+        "type": "객관식",
+        "score": 2,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 2,
+        "images": ["https://raw.githubusercontent.com/hwimath3/7452/main/2.png"],
+        "passage": "",
+        "answer": "2",
+        "type": "객관식",
+        "score": 2,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 3,
+        "images": ["https://raw.githubusercontent.com/hwimath3/7452/main/3.png"],
+        "passage": "",
+        "answer": "1",
+        "type": "객관식",
+        "score": 3,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 4,
+        "images": ["https://raw.githubusercontent.com/hwimath3/7452/main/4.png"],
+        "passage": "",
+        "answer": "2",
+        "type": "객관식",
+        "score": 3,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 5,
+        "images": ["https://raw.githubusercontent.com/hwimath3/7452/main/5.png"],
+        "passage": "",
+        "answer": "5",
+        "type": "객관식",
+        "score": 3,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 6,
+        "images": ["https://raw.githubusercontent.com/hwimath3/7452/main/6.png"],
+        "passage": "",
+        "answer": "4",
+        "type": "객관식",
+        "score": 3,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 7,
+        "images": ["https://raw.githubusercontent.com/hwimath3/7452/main/7.png"],
+        "passage": "",
+        "answer": "3",
+        "type": "객관식",
+        "score": 3,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 8,
+        "images": ["https://raw.githubusercontent.com/hwimath3/7452/main/8.png"],
+        "passage": "",
+        "answer": "1",
+        "type": "객관식",
+        "score": 3,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 9,
+        "images": ["https://raw.githubusercontent.com/hwimath3/7452/main/9.png"],
+        "passage": "",
+        "answer": "2",
+        "type": "객관식",
+        "score": 4,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 10,
+        "images": ["https://raw.githubusercontent.com/hwimath3/7452/main/10.png"],
+        "passage": "",
+        "answer": "5",
+        "type": "객관식",
+        "score": 4,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 11,
+        "images": ["https://raw.githubusercontent.com/hwimath3/7452/main/11.png"],
+        "passage": "",
+        "answer": "3",
+        "type": "객관식",
+        "score": 4,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 12,
+        "images": ["https://raw.githubusercontent.com/hwimath3/7452/main/12.png"],
+        "passage": "",
+        "answer": "1",
+        "type": "객관식",
+        "score": 4,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 13,
+        "images": ["https://raw.githubusercontent.com/hwimath3/7452/main/13.png"],
+        "passage": "",
+        "answer": "2",
+        "type": "객관식",
+        "score": 4,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 14,
+        "images": ["https://raw.githubusercontent.com/hwimath3/7452/main/14.png"],
+        "passage": "",
+        "answer": "4",
+        "type": "객관식",
+        "score": 4,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 15,
+        "images": ["https://raw.githubusercontent.com/hwimath3/7452/main/15.png"],
+        "passage": "",
+        "answer": "1",
+        "type": "객관식",
+        "score": 4,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 16,
+        "images": ["https://raw.githubusercontent.com/hwimath3/7452/main/16.png"],
+        "passage": "",
+        "answer": "3",
+        "type": "주관식",
+        "score": 3,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 17,
+        "images": ["https://raw.githubusercontent.com/hwimath3/7452/main/17.png"],
+        "passage": "",
+        "answer": "11",
+        "type": "주관식",
+        "score": 3,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 18,
+        "images": ["https://raw.githubusercontent.com/hwimath3/7452/main/18.png"],
+        "passage": "",
+        "answer": "8",
+        "type": "주관식",
+        "score": 3,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 19,
+        "images": ["https://raw.githubusercontent.com/hwimath3/7452/main/19.png"],
+        "passage": "",
+        "answer": "6",
+        "type": "주관식",
+        "score": 3,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 20,
+        "images": ["https://raw.githubusercontent.com/hwimath3/7452/main/20.png"],
+        "passage": "",
+        "answer": "73",
+        "type": "주관식",
+        "score": 4,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 21,
+        "images": ["https://raw.githubusercontent.com/hwimath3/7452/main/21.png"],
+        "passage": "",
+        "answer": "39",
+        "type": "주관식",
+        "score": 4,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 22,
+        "images": ["https://raw.githubusercontent.com/hwimath3/7452/main/22.png"],
+        "passage": "",
+        "answer": "18",
+        "type": "주관식",
+        "score": 4,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 23,
+        "images": ["https://raw.githubusercontent.com/hwimath3/9562/main/23.png"],
+        "passage": "",
+        "answer": "2",
+        "type": "객관식",
+        "score": 2,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 24,
+        "images": ["https://raw.githubusercontent.com/hwimath3/9562/main/24.png"],
+        "passage": "",
+        "answer": "1",
+        "type": "객관식",
+        "score": 3,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 25,
+        "images": ["https://raw.githubusercontent.com/hwimath3/9562/main/25.png"],
+        "passage": "",
+        "answer": "1",
+        "type": "객관식",
+        "score": 3,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 26,
+        "images": ["https://raw.githubusercontent.com/hwimath3/9562/main/26.png"],
+        "passage": "",
+        "answer": "4",
+        "type": "객관식",
+        "score": 3,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 27,
+        "images": ["https://raw.githubusercontent.com/hwimath3/9562/main/27.png"],
+        "passage": "",
+        "answer": "2",
+        "type": "객관식",
+        "score": 3,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 28,
+        "images": ["https://raw.githubusercontent.com/hwimath3/9562/main/28.png"],
+        "passage": "",
+        "answer": "3",
+        "type": "객관식",
+        "score": 4,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 29,
+        "images": ["https://raw.githubusercontent.com/hwimath3/9562/main/29.png"],
+        "passage": "",
+        "answer": "15",
+        "type": "주관식",
+        "score": 4,
+        "placeholders": "",
+        "customOptions": ""
+      },
+      {
+        "id": 30,
+        "images": ["https://raw.githubusercontent.com/hwimath3/9562/main/30.png"],
+        "passage": "",
+        "answer": "59",
+        "type": "주관식",
+        "score": 4,
+        "placeholders": "",
+        "customOptions": ""
+      }
+    ]
+  };
+</script>
+  <style>
+    /* ======================= 디자인 변수 설정 (카테고리별 정리) ======================= */
+    :root {
+      /* ... (기존 CSS 변수 대부분 유지) ... */
+      --start-button-text: "시험시작";
+      --submit-button-text: "결과전송"; /* 이 변수는 더 이상 사용되지 않음 */
+      --result-title-text: "시험 결과";
+      --next-button-text: "다음문제";
+      --prev-button-text: "이전문제";
+      --complete-button-text: "완료";
+
+      --body-bg-start-color: #f5f7fa;
+      --body-bg-end-color: #c3cfe2;
+      --body-pattern-opacity: 0.3;
+      --start-screen-title: "이름을 ";
+      --player-name-placeholder: "이름을 입력하세요";
+      --success-message: "성공: 데이터가 성공적으로 전송되었습니다.";
+      --error-message: "오류: 데이터 전송에 실패했습니다.";
+      --network-error: "네트워크 오류: 서버와 통신할 수 없습니다.";
+      --game-title-color: #2c3e50;
+      --game-title-font-size: 32px;
+      --game-title-bg-start: rgba(255,255,255,0.9);
+      --game-title-bg-end: rgba(240,242,245,0.85);
+      --game-title-border: 1px solid rgba(255,255,255,0.7);
+      --game-title-border-radius: 12px;
+      --game-title-shadow: 2px 2px 2px rgba(0,0,0,0.2), 0 0 15px rgba(255,255,255,0.8);
+      --title-line-width: 80px;
+      --title-line-height: 3px;
+      --title-line-position: -10px;
+      --title-line-radius: 3px;
+      --title-line-start-color: #322D55;
+      --title-line-end-color: #9b59b6;
+      --secondary-color: #2c3e50;
+      --light-gray: #f8f9fa;
+      --light-gray-2: #ecf0f1;
+      --correct-color: #2ecc71;
+      --correct-dark: #27ae60;
+      --incorrect-color: #e74c3c;
+      --incorrect-dark: #c0392b;
+      --button-font-size: 16px;
+      --button-padding: 14px 24px;
+      --button-margin: 10px 5px; /* .btn 기본 마진, navigation-buttons 내부에서 override 가능 */
+      --button-transform: translateY(-4px);
+      --button-hover-transform: translateY(-5px);
+      --button-active-transform: translateY(0px);
+      --disabled-color: #bdc3c7;
+      --start-button-color: #2ecc71;
+      --start-button-dark: #27ae60;
+      --next-button-color: #322D55;
+      --next-button-dark: #262142;
+      --prev-button-color: #3498db;
+      --prev-button-dark: #2980b9;
+      --complete-button-color: #f39c12; /* 기존 complete-button-color 유지 */
+      --complete-button-dark: #d35400; /* 기존 complete-button-dark 유지 */
+      /* --submit-button-color: #f39c12; /* 삭제 */
+      /* --submit-button-dark: #d35400; /* 삭제 */
+      --option-color: #3498db;
+      --option-dark: #2980b9;
+      --option-selected-color: #f39c12;
+      --option-selected-dark: #d35400;
+      --keyboard-top: #f5f5f5;
+      --keyboard-side: #ddd;
+      --keyboard-bottom: #bbb;
+      --option-min-width: 70px;
+      --option-padding-h: 10px;
+      --option-padding-v: 15px;
+      --option-font-size: 25px;
+      --option-3d-angle: 10deg;
+      --option-selected-scale: 1.1;
+      --option-hover-scale: 1.05;
+      --correct-bg-color: rgba(46,204,113,0.2);
+      --correct-glow-color: rgba(46,204,113,0.5);
+      --incorrect-bg-color: rgba(231,76,60,0.2);
+      --incorrect-glow-color: rgba(231,76,60,0.5);
+      --answer-glow-intensity: 15px;
+      --progress-height: 15px;
+      --progress-border-radius: 8px;
+      --progress-bg-color: rgba(236,240,241,0.8);
+      --progress-left-color: #00D2F7;
+      --progress-right-color: #7DF9AA;
+      --progress-gradient: linear-gradient(90deg, var(--progress-left-color) 0%, var(--progress-right-color) 100%);
+      --progress-shine: rgba(255,255,255,0.35);
+      --progress-animation-duration: 0.7s;
+      --progress-shine-duration: 2s;
+      --complete-animation-duration: 1.5s;
+      --particle-count: 50;
+      --particle-size-min: 5px;
+      --particle-size-max: 15px;
+      --particle-animation-duration: 1s;
+      --particle-distance-min: 50px;
+      --particle-distance-max: 230px;
+      --result-info-bg: rgba(255,255,255,0.7);
+      --result-score-bg: linear-gradient(120deg, var(--next-button-color) 0%, #9b59b6 46%, #FFCC70 100%);
+      --score-highlight-color: #FFCC70;
+      --result-animation-duration: 0.5s;
+      --score-pulsate-duration: 2s;
+      --score-shine-duration: 3s;
+      --particle-color-1: #00D2F7;
+      --particle-color-2: #322D55;
+      --particle-color-3: #FFCC70;
+      --particle-color-4: #4CAF50;
+      --particle-color-5: #9b59b6;
+      --main-font: 'Noto Sans KR', sans-serif;
+      --base-font-size: 16px;
+      --small-font-size: 0.9rem;
+      --medium-font-size: 1.2rem;
+      --large-font-size: 1.3rem;
+      --x-large-font-size: 2rem;
+      --container-max-width: 1100px;
+      --container-width: 95%;
+      --container-padding: 30px;
+      --item-margin: 15px;
+      --small-gap: 10px;
+      --large-gap: 25px;
+      --question-min-height: 500px;
+      --border-radius-small: 5px;
+      --border-radius-medium: 8px;
+      --border-radius-large: 10px;
+      --border-radius-x-large: 12px;
+      --border-radius-circle: 50%;
+      --box-shadow-light: 0 2px 5px rgba(0,0,0,0.1);
+      --box-shadow-medium: 0 4px 10px rgba(0,0,0,0.1);
+      --box-shadow-heavy: 0 8px 20px rgba(0,0,0,0.15);
+      --input-padding: 15px 20px;
+      --input-font-size: 16px;
+      --input-focus-shadow: 0 5px 15px rgba(52,152,219,0.2);
+      --input-focus-transform: translateY(-2px);
+      --mobile-breakpoint: 480px;
+    }
+
+    body { margin: 0; padding: 10px; font-family: var(--main-font); background: linear-gradient(135deg, var(--body-bg-start-color) 0%, var(--body-bg-end-color) 100%); color: #333; display: flex; flex-direction: column; align-items: center; min-height: 100vh; overflow-x: hidden; position: relative; }
+    body::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%2393c5fd' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E"); opacity: var(--body-pattern-opacity); z-index: -1; }
+    .banner { width: 100%; text-align: center; background-color: white; padding: 15px 0; margin-bottom: 20px; border-radius: 10px; box-shadow: var(--box-shadow-light); display: none; }
+    .banner img { max-width: 100%; height: auto; }
+    #gameTitle { text-align: center; font-size: var(--game-title-font-size); font-weight: bold; margin-bottom: 20px; color: var(--game-title-color); text-shadow: var(--game-title-shadow); position: relative; padding: 15px 30px; border-radius: var(--game-title-border-radius); background: linear-gradient(135deg, var(--game-title-bg-start) 0%, var(--game-title-bg-end) 100%); backdrop-filter: blur(4px); box-shadow: var(--box-shadow-medium), inset 0 -2px 5px rgba(255,255,255,0.7); display: inline-block; letter-spacing: 1px; transform: perspective(100px) translateZ(5px); border: var(--game-title-border); }
+    #gameTitle::after { content: ''; position: absolute; bottom: var(--title-line-position); left: 50%; transform: translateX(-50%); width: var(--title-line-width); height: var(--title-line-height); background: linear-gradient(90deg, var(--title-line-start-color), var(--title-line-end-color)); border-radius: var(--title-line-radius); box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .container { max-width: var(--container-max-width); width: var(--container-width); margin: 0 auto; background-color: rgba(255,255,255,0.9); border-radius: var(--border-radius-x-large); box-shadow: var(--box-shadow-medium); padding: var(--container-padding); transition: all 0.3s ease; backdrop-filter: blur(5px); position: relative; overflow: hidden; text-align: center; }
+    .container:hover { box-shadow: var(--box-shadow-heavy); }
+    .container::before { content: ''; position: absolute; top: -100%; left: -100%; width: 100%; height: 100%; background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent); transform: rotate(45deg); animation: shine-container 8s infinite linear; }
+    @keyframes shine-container { 0% { top: -100%; left: -100%; } 100% { top: 100%; left: 100%; } }
+    .info-panel { display: flex; justify-content: center; background-color: var(--light-gray); padding: 15px; border-radius: var(--border-radius-large); margin-bottom: 25px; box-shadow: var(--box-shadow-light); }
+    .info-item { text-align: center; padding: 0 15px; flex: 1; }
+    .info-label { font-weight: 500; margin-bottom: 5px; color: var(--secondary-color); font-size: var(--small-font-size); text-transform: uppercase; }
+    .info-value { font-size: var(--large-font-size); color: var(--secondary-color); font-weight: bold; }
+    #startSection { text-align: center; padding: 40px 0; background-color: rgba(255,255,255,0.8); border-radius: var(--border-radius-x-large); box-shadow: var(--box-shadow-medium); max-width: 600px; margin: 40px auto; position: relative; z-index: 1; overflow: hidden; }
+    #startSection::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255,255,255,0.3) 10%, transparent 60%); animation: pulse-start 5s infinite linear; z-index: -1; }
+    @keyframes pulse-start { 0% { transform: scale(0.95); opacity: 0.7; } 50% { transform: scale(1.05); opacity: 0.3; } 100% { transform: scale(0.95); opacity: 0.7; } }
+    .start-title { font-size: 28px; margin-bottom: 30px; position: relative; display: inline-block; color: var(--secondary-color); }
+    .start-title::after { content: ''; position: absolute; bottom: -10px; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, transparent, var(--next-button-color), transparent); }
+    .input-field { padding: var(--input-padding); font-size: var(--input-font-size); border: none; border-radius: 10px; width: 300px; margin-right: 10px; outline: none; transition: all 0.3s; box-shadow: 0 3px 10px rgba(0,0,0,0.1), inset 0 2px 5px rgba(0,0,0,0.05); background-color: white; color: var(--secondary-color); }
+    .input-field:focus { box-shadow: var(--input-focus-shadow), inset 0 2px 5px rgba(0,0,0,0.05); transform: var(--input-focus-transform); }
+    .input-field::placeholder { color: #bdc3c7; transition: all 0.3s; }
+    .input-field:focus::placeholder { opacity: 0.7; transform: translateX(5px); }
+    .btn { padding: var(--button-padding); font-size: var(--button-font-size); border: none; border-radius: var(--border-radius-medium); cursor: pointer; /* margin 제거됨, 컨테이너에서 관리 */ font-weight: 500; position: relative; color: white; text-shadow: 0 1px 1px rgba(0,0,0,0.2); transition: all 0.15s ease; background-color: var(--keyboard-top); box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 2px 0 rgba(0,0,0,0.1), 0 4px 0 var(--keyboard-bottom), 0 6px 0 rgba(0,0,0,0.1), 0 8px 0 rgba(0,0,0,0.1), 0 0 10px rgba(0,0,0,0.2); transform: var(--button-transform); overflow: hidden; }
+    .btn::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 50%; background: linear-gradient(to bottom, rgba(255,255,255,0.2), transparent); border-radius: 7px 7px 0 0; }
+    .btn:after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 40%; background: linear-gradient(to top, rgba(0,0,0,0.1), transparent); border-radius: 0 0 7px 7px; }
+    .btn:hover { transform: var(--button-hover-transform); box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 3px 0 rgba(0,0,0,0.1), 0 5px 0 var(--keyboard-bottom), 0 7px 0 rgba(0,0,0,0.1), 0 9px 0 rgba(0,0,0,0.1), 0 0 12px rgba(0,0,0,0.2); }
+    .btn:active { transform: var(--button-active-transform); box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 1px 0 rgba(0,0,0,0.1), 0 2px 0 var(--keyboard-bottom), 0 0 5px rgba(0,0,0,0.2); transition: all 0.05s ease; }
+    .btn:disabled { cursor: not-allowed; transform: translateY(1px); filter: grayscale(40%) brightness(95%); opacity: 0.7; box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 1px 0 rgba(0,0,0,0.1), 0 2px 0 rgba(0,0,0,0.1); text-shadow: none; transition: all 0.2s ease; }
+    .btn:disabled:hover { transform: translateY(1px); box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 1px 0 rgba(0,0,0,0.1), 0 2px 0 rgba(0,0,0,0.1); filter: grayscale(40%) brightness(95%); }
+    #startButton { background-color: var(--start-button-color); box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 2px 0 rgba(0,0,0,0.1), 0 4px 0 var(--start-button-dark), 0 6px 0 rgba(0,0,0,0.1), 0 8px 0 rgba(0,0,0,0.1), 0 0 10px rgba(0,0,0,0.2); margin: var(--button-margin); /* 시작 버튼은 독립적 마진 유지 */}
+    #startButton:hover { box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 3px 0 rgba(0,0,0,0.1), 0 5px 0 var(--start-button-dark), 0 7px 0 rgba(0,0,0,0.1), 0 9px 0 rgba(0,0,0,0.1), 0 0 12px rgba(0,0,0,0.2); }
+    #nextButton { background-color: var(--next-button-color); box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 2px 0 rgba(0,0,0,0.1), 0 4px 0 var(--next-button-dark), 0 6px 0 rgba(0,0,0,0.1), 0 8px 0 rgba(0,0,0,0.1), 0 0 10px rgba(0,0,0,0.2); }
+    #nextButton:hover { box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 3px 0 rgba(0,0,0,0.1), 0 5px 0 var(--next-button-dark), 0 7px 0 rgba(0,0,0,0.1), 0 9px 0 rgba(0,0,0,0.1), 0 0 12px rgba(0,0,0,0.2); }
+    #prevButton { background-color: var(--prev-button-color); box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 2px 0 rgba(0,0,0,0.1), 0 4px 0 var(--prev-button-dark), 0 6px 0 rgba(0,0,0,0.1), 0 8px 0 rgba(0,0,0,0.1), 0 0 10px rgba(0,0,0,0.2); }
+    #prevButton:hover { box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 3px 0 rgba(0,0,0,0.1), 0 5px 0 var(--prev-button-dark), 0 7px 0 rgba(0,0,0,0.1), 0 9px 0 rgba(0,0,0,0.1), 0 0 12px rgba(0,0,0,0.2); }
+    #nextButton.complete-button { background-color: var(--complete-button-color); box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 2px 0 rgba(0,0,0,0.1), 0 4px 0 var(--complete-button-dark), 0 6px 0 rgba(0,0,0,0.1), 0 8px 0 rgba(0,0,0,0.1), 0 0 10px rgba(0,0,0,0.2); }
+    #nextButton.complete-button:hover { box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 3px 0 rgba(0,0,0,0.1), 0 5px 0 var(--complete-button-dark), 0 7px 0 rgba(0,0,0,0.1), 0 9px 0 rgba(0,0,0,0.1), 0 0 12px rgba(137, 87, 161, 0.4); }
+    /* #submitButton { background-color: var(--submit-button-color); box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 2px 0 rgba(0,0,0,0.1), 0 4px 0 var(--submit-button-dark), 0 6px 0 rgba(0,0,0,0.1), 0 8px 0 rgba(0,0,0,0.1), 0 0 10px rgba(0,0,0,0.2); margin: var(--button-margin); } */ /* 삭제 */
+    /* #submitButton:hover { box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 3px 0 rgba(0,0,0,0.1), 0 5px 0 var(--submit-button-dark), 0 7px 0 rgba(0,0,0,0.1), 0 9px 0 rgba(0,0,0,0.1), 0 0 12px rgba(0,0,0,0.2); } */ /* 삭제 */
+    .option { border: none; border-radius: var(--border-radius-medium); cursor: pointer; font-weight: 500; transition: all 0.15s ease; box-shadow: 0 4px 8px rgba(0,0,0,0.2); padding: var(--option-padding-v) var(--option-padding-h); font-size: var(--option-font-size); margin: var(--button-margin); position: relative; overflow: hidden; background: radial-gradient(ellipse at 30% 30%, var(--option-color) 0%, var(--option-dark) 100%); color: white; text-align: center; transform: perspective(500px) rotateX(var(--option-3d-angle)); box-shadow: 0 6px 12px rgba(0,0,0,0.15), 0 3px 5px rgba(0,0,0,0.12), inset 0 -4px 5px rgba(0,0,0,0.2), inset 0 2px 4px rgba(255,255,255,0.5); min-width: var(--option-min-width); }
+    .option .katex { font-size: var(--option-font-size); }
+    .option::before { content: ''; position: absolute; width: 100%; height: 100%; background: radial-gradient(ellipse at 30% 30%, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 70%); top: 0; left: 0; z-index: 2; }
+    .option::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 60%; background: linear-gradient(to bottom, rgba(255,255,255,0.4), rgba(255,255,255,0)); transform: translateZ(1px); }
+    .option:hover { background: radial-gradient(ellipse at 30% 30%, var(--option-color) 30%, var(--option-dark) 100%); transform: perspective(500px) rotateX(calc(var(--option-3d-angle) + 5deg)) translateY(-3px) scale(var(--option-hover-scale)); box-shadow: 0 10px 20px rgba(0,0,0,0.2), 0 5px 8px rgba(0,0,0,0.15), inset 0 -4px 5px rgba(0,0,0,0.2), inset 0 2px 4px rgba(255,255,255,0.5); }
+    .option.selected { background: radial-gradient(ellipse at 30% 30%, var(--option-selected-color) 0%, var(--option-selected-dark) 100%); transform: perspective(500px) rotateX(calc(var(--option-3d-angle) + 5deg)) scale(var(--option-selected-scale)); box-shadow: 0 8px 25px rgba(0,0,0,0.15), 0 5px 10px rgba(0,0,0,0.1), 0 0 15px rgba(255, 165, 0, 0.5), inset 0 -4px 5px rgba(0,0,0,0.2), inset 0 2px 4px rgba(255,255,255,0.5); }
+    #gameSection { display: none; width: 100%; }
+    .question-container { display: flex; flex-direction: row; margin-bottom: 30px; background-color: var(--light-gray); border-radius: var(--border-radius-large); box-shadow: var(--box-shadow-medium); padding: 20px; min-height: var(--question-min-height); overflow: hidden; position: relative; }
+    .question-container::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: linear-gradient(90deg, var(--next-button-color), #9b59b6); border-radius: 10px 10px 0 0; }
+    .passage { flex: 0 0 38%; padding-right: 10px; max-height: 600px; overflow-y: auto; border-right: 1px solid #eee; display: none; }
+    .passage img { width: 100%; height: auto; display: block; }
+    .question { flex: 1; text-align: center; padding: 15px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
+    .question.with-passage { margin-left: 10px; }
+
+    .question-header { display: flex; align-items: center; justify-content: center; margin-bottom: 15px; flex-wrap: wrap; }
+    .question-number { font-size: var(--medium-font-size); font-weight: bold; color: var(--secondary-color); background-color: var(--light-gray-2); padding: 8px 15px; border-radius: 20px; display: inline-block; box-shadow: var(--box-shadow-light); margin-right: 10px; }
+    .current-question-stay-timer { font-size: var(--medium-font-size); font-weight: bold; color: var(--secondary-color); background-color: var(--light-gray-2); padding: 8px 15px; border-radius: 20px; display: inline-block; box-shadow: var(--box-shadow-light); }
+
+    .navigation-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px; /* 진행률 표시줄과의 간격 */
+        gap: 10px; /* 버튼 사이 간격 */
+    }
+    .navigation-buttons .btn {
+        margin: 0; /* .btn의 기본 마진 var(--button-margin)을 오버라이드 */
+    }
+
+    .question-images { width: 100%; text-align: center; margin-bottom: 20px; max-width: 800px; }
+    .image-container { width: 100%; display: flex; flex-direction: column; align-items: center; font-size: 0; line-height: 0; }
+    .question-image { width: 100%; height: auto; display: block; margin: 0; padding: 0; vertical-align: bottom; border-radius: var(--border-radius-small); box-shadow: var(--box-shadow-light); transition: all 0.3s ease; }
+    .question-image + .question-image { border-top-left-radius: 0; border-top-right-radius: 0; margin-top: -1px; box-shadow: none; }
+    .question-image:first-child { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+    .options { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 30px 0; width: 100%; }
+    .options.vertical { flex-direction: column; align-items: center; }
+    .input-answer { display: none; flex-direction: column; align-items: center; margin: 30px 0; width: 100%; }
+    .input-answer-fields { display: flex; flex-direction: column; gap: 10px; width: 100%; margin-bottom: 15px; align-items: center; }
+    .answer-input { padding: var(--input-padding); font-size: var(--input-font-size); border: none; border-radius: 10px; width: 100%; outline: none; transition: all 0.3s; box-shadow: 0 3px 10px rgba(0,0,0,0.1), inset 0 2px 5px rgba(0,0,0,0.05); background-color: white; color: var(--secondary-color); box-sizing: border-box; }
+    .answer-input:focus { box-shadow: var(--input-focus-shadow), inset 0 2px 5px rgba(0,0,0,0.05); transform: var(--input-focus-transform); }
+    .progress-container { width: 100%; height: var(--progress-height); background-color: var(--progress-bg-color); border-radius: var(--progress-border-radius); margin: 30px 0 15px; position: relative; overflow: hidden; box-shadow: inset 0 1px 3px rgba(0,0,0,0.2); }
+    .progress-bar { height: 100%; width: 0%; background-image: var(--progress-gradient); transition: width var(--progress-animation-duration) cubic-bezier(0.22,0.61,0.36,1.2); border-radius: var(--progress-border-radius); position: relative; box-shadow: var(--box-shadow-light); overflow: hidden; }
+    .progress-bar::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, var(--progress-shine), transparent); animation: shine var(--progress-shine-duration) infinite; z-index: 2; }
+    .progress-bar::after { content: ''; position: absolute; top: -50%; left: -100%; width: 200%; height: 200%; background-image: repeating-linear-gradient( 45deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.1) 5%, rgba(255,255,255,0.3) 10%, rgba(255,255,255,0.1) 15%, rgba(255,255,255,0.1) 20% ); animation: wave 8s infinite linear; z-index: 1; }
+    .progress-container::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: repeating-linear-gradient( -45deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.05) 7%, rgba(255,255,255,0.2) 14%, rgba(255,255,255,0.05) 21%, rgba(255,255,255,0.05) 28% ); animation: wave-reverse 10s infinite linear; border-radius: var(--progress-border-radius); z-index: 0; opacity: 0.6; pointer-events: none; }
+    @keyframes shine { 0% { left: -100%; } 20% { left: 100%; } 100% { left: 100%; } }
+    @keyframes wave { 0% { transform: rotate(0) translateX(-25%); } 100% { transform: rotate(360deg) translateX(-25%); } }
+    @keyframes wave-reverse { 0% { transform: rotate(0deg); } 100% { transform: rotate(-360deg); } }
+    .progress-indicator { position: absolute; right: 10px; top: -25px; background-color: var(--secondary-color); color: white; font-size: 0.8rem; padding: 3px 10px; border-radius: 12px; box-shadow: var(--box-shadow-light); opacity: 0.9; transform: translateY(0); transition: transform 0.3s ease; }
+    #resultSection { display: none; text-align: center; padding: 40px; background: linear-gradient(135deg, var(--body-bg-start-color) 0%, var(--body-bg-end-color) 100%); border-radius: var(--border-radius-x-large); box-shadow: 0 10px 30px rgba(0,0,0,0.2); max-width: 900px; margin: 40px auto; position: relative; overflow: hidden; animation: fadeIn var(--result-animation-duration) ease-in-out; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    #resultSection::before { content: ''; position: absolute; top: -50px; left: -50px; right: -50px; bottom: -50px; background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%2393c5fd' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E"); opacity: var(--body-pattern-opacity); z-index: -1; }
+    .result-title { font-size: 32px; font-weight: bold; margin-bottom: 25px; color: var(--secondary-color); text-transform: uppercase; letter-spacing: 1px; padding-bottom: 10px; position: relative; display: inline-block; }
+    .result-title::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: var(--title-line-width); height: var(--title-line-height); background: linear-gradient(90deg, var(--title-line-start-color), var(--title-line-end-color)); border-radius: var(--title-line-radius); }
+    .result-info { font-size: 20px; margin-bottom: 20px; padding: 15px; background-color: var(--result-info-bg); border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); backdrop-filter: blur(4px); transition: all 0.3s ease; }
+    #finalScoreDisplay { font-size: var(--x-large-font-size); font-weight: bold; margin: 25px auto; padding: 20px; background: var(--result-score-bg); color: white; border-radius: var(--border-radius-x-large); box-shadow: var(--box-shadow-heavy); max-width: 400px; /* 정답률 표시 없으므로 기존 너비 유지 가능 */ text-shadow: 1px 1px 3px rgba(0,0,0,0.3); animation: pulsate var(--score-pulsate-duration) infinite alternate; position: relative; overflow: hidden; }
+    #finalScoreDisplay::before { content: ''; position: absolute; top: 0; left: -100%; width: 200%; height: 100%; background: linear-gradient(to right, transparent, rgba(255,255,255,0.3), transparent); transform: skewX(-25deg); animation: shine-score var(--score-shine-duration) infinite; }
+    @keyframes shine-score { 0% { left: -100%; } 45%, 100% { left: 100%; } }
+    @keyframes pulsate { 0% { transform: scale(1); } 100% { transform: scale(1.03); } }
+    #answerTableContainer { margin-bottom: 20px; max-height: 400px; overflow-y: auto; border: 1px solid #ddd; border-radius: 8px;}
+    .answer-table { width: 100%; border-collapse: collapse; font-size: 0.9em; background-color: white; border-radius: 8px; overflow: hidden; }
+    .answer-table th, .answer-table td { border: 1px solid #ddd; padding: 10px 8px; text-align: center; vertical-align: middle; }
+    .answer-table th { background-color: #f8f9fa; color: var(--secondary-color); font-weight: 600; position: sticky; top: 0; z-index: 1;}
+    .answer-table .user-answer-col, .answer-table .correct-answer-col { word-break: break-all; }
+    .correct-answer-row td:nth-child(2) { color: var(--correct-color); font-weight: bold; }
+    .incorrect-answer-row td:nth-child(2) { color: var(--incorrect-color); font-weight: bold; }
+    .unanswered-row td:nth-child(2) { color: #757575; font-style: italic; }
+    .server-message { margin-top: 15px; padding: 10px; border-radius: 8px; font-weight: 600; animation: fadeIn var(--result-animation-duration) ease-in-out; }
+    .server-message.success { color: var(--correct-color); }
+    .server-message.error { color: var(--incorrect-color); }
+    .loading-spinner { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 9999; justify-content: center; align-items: center; }
+    .spinner { width: 50px; height: 50px; border: 5px solid #f3f3f3; border-top: 5px solid var(--next-button-color); border-radius: 50%; animation: spin 1s linear infinite; }
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    @media (max-width: var(--mobile-breakpoint)) {
+      .container { padding: 10px; width: 100%; border-radius: 8px; }
+      #gameTitle { font-size: 24px; }
+      .info-panel { padding: 8px 3px; margin-bottom: 15px; }
+      .info-label { font-size: 0.7rem; margin-bottom: 3px; }
+      .info-value { font-size: 1rem; }
+      .btn { padding: 10px 15px; font-size: 0.9rem; /* margin 제거됨 */ }
+      .navigation-buttons .btn { margin: 0 3px; }
+      .input-field { width: calc(100% - 30px); margin-right: 0; margin-bottom: 10px; }
+      .answer-input { width: 100%; }
+      #startSection { padding: 20px 10px; }
+      #startSection > div { display: flex; flex-direction: column; align-items: center; }
+      .question-container { flex-direction: column; }
+      .passage { border-right: none; border-bottom: 1px solid #eee; padding-right: 0; margin-bottom: 10px; max-height: 300px; }
+      .question.with-passage { margin-left: 0; }
+      .input-answer-fields > div[style*="width: 350px"] { width: 90% !important; max-width: 350px; }
+      .answer-table { font-size: 0.8em; }
+      .answer-table th, .answer-table td { padding: 6px 4px;}
+      #finalScoreDisplay {font-size: 1.5rem; max-width: 90%;}
+      .question-header { flex-direction: column; align-items: center; }
+      .question-number { margin-right: 0; margin-bottom: 5px; }
+      .current-question-stay-timer { margin-bottom: 10px; }
+      .navigation-buttons { flex-direction: row; justify-content: space-around; }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="banner" id="banner"></div>
+  <h1 id="gameTitle"></h1>
+  <div class="loading-spinner" id="loadingSpinner">
+    <div class="spinner"></div>
+  </div>
+
+  <div class="container">
+    <div id="startSection">
+      <h2 class="start-title">이름을 입력하고 시험을 시작하세요</h2>
+      <div>
+        <input class="input-field" id="playerName" placeholder="이름을 입력하세요" type="text"/>
+        <button class="btn" id="startButton">시험시작</button>
+      </div>
+    </div>
+
+    <div id="gameSection">
+      <div class="info-panel">
+        <div class="info-item">
+          <div class="info-label">총 경과시간</div>
+          <div class="info-value" id="timer">00:00</div>
+        </div>
+      </div>
+      <div class="question-container" id="questionContainer">
+        <div class="passage" id="passage"></div>
+        <div class="question" id="question">
+          <div class="question-header">
+            <div class="question-number" id="questionNumber">문제 1</div>
+            <span id="currentQuestionStayTimer" class="current-question-stay-timer">00:00</span>
+          </div>
+          <div class="question-images" id="questionImages"></div>
+          <div class="options" id="multipleChoice"></div>
+          <div class="input-answer" id="shortAnswer"></div>
+          <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+            <div class="progress-indicator" id="progressIndicator">0/0</div>
+          </div>
+          <div class="navigation-buttons">
+            <button class="btn" id="prevButton" style="display: none;">이전문제</button>
+            <button class="btn" id="nextButton">다음문제</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="resultSection">
+      <div class="result-title">시험 결과</div>
+      <div id="finalScoreDisplay" class="result-info"></div> <div id="answerTableContainer"></div>
+      <div class="result-info" id="finalTime"></div>
+      <div id="serverMessage" class="server-message"></div>
+    </div>
+  </div>
+
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']], processEscapes: true },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'], ignoreHtmlClass: 'tex2jax_ignore', processHtmlClass: 'has-latex' }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+ <script>
+  /* 텍스트 설정 */
+  const START_SCREEN_TITLE = "이름을 입력하고 시험을 시작하세요";
+  const PLAYER_NAME_PLACEHOLDER = "이름을 입력하세요";
+  const START_BUTTON_TEXT = "시험시작";
+  const NEXT_BUTTON_TEXT = "다음문제";
+  const PREV_BUTTON_TEXT = "이전문제";
+  const COMPLETE_BUTTON_TEXT = "완료";
+  // const SUBMIT_BUTTON_TEXT = "결과전송"; // 삭제됨
+  const RESULT_TITLE_TEXT = "시험 결과";
+
+  const SUCCESS_MESSAGE = "성공: 데이터가 성공적으로 전송되었습니다.";
+  const ERROR_MESSAGE = "오류: 데이터 전송에 실패했습니다.";
+  const NETWORK_ERROR = "네트워크 오류: 서버와 통신할 수 없습니다.";
+
+  /* 게임 설정 */
+  const gameTitle = gameConfig.gameTitle;
+  const questions = gameConfig.questions;
+  const defaultScore = gameConfig.defaultScore || 10;
+  const bannerURL = gameConfig.bannerURL || "";
+  let randomizeQuestions = gameConfig.randomizeQuestions || false;
+
+  /* 전역 변수 선언 */
+  let currentQuestion = 0;
+  let score = 0;
+  let elapsedTime = 0;
+  let timerInterval = null;
+  let startTime = 0;
+  let gameOver = false;
+  let userAnswers = [];
+  let selectedOptions = [];
+  let player = "";
+  let perQuestionStayTimes = {};
+  let currentQuestionIdForStayTime = null;
+  let currentQuestionActiveStartTime = 0;
+  let activeQuestionStayTimerInterval = null;
+
+  /* DOM 요소 참조 */
+  const elements = {
+    banner: document.getElementById("banner"),
+    gameTitle: document.getElementById("gameTitle"),
+    startSection: document.getElementById('startSection'),
+    gameSection: document.getElementById('gameSection'),
+    resultSection: document.getElementById('resultSection'),
+    playerName: document.getElementById('playerName'),
+    startButton: document.getElementById('startButton'),
+    timer: document.getElementById('timer'),
+    questionContainer: document.getElementById('questionContainer'),
+    passage: document.getElementById('passage'),
+    question: document.getElementById('question'),
+    questionNumber: document.getElementById('questionNumber'),
+    currentQuestionStayTimer: document.getElementById('currentQuestionStayTimer'),
+    questionImages: document.getElementById('questionImages'),
+    multipleChoice: document.getElementById('multipleChoice'),
+    shortAnswer: document.getElementById('shortAnswer'),
+    prevButton: document.getElementById('prevButton'),
+    nextButton: document.getElementById('nextButton'),
+    // submitButton: document.getElementById('submitButton'), // 삭제됨
+    finalScoreDisplay: document.getElementById('finalScoreDisplay'),
+    answerTableContainer: document.getElementById('answerTableContainer'),
+    finalTime: document.getElementById('finalTime'),
+    serverMessage: document.getElementById('serverMessage'),
+    progressBar: document.getElementById('progressBar'),
+    progressIndicator: document.getElementById('progressIndicator'),
+    loadingSpinner: document.getElementById('loadingSpinner'),
+    progressContainer: document.querySelector('.progress-container')
+  };
+
+  const timerFunctions = {
+    start() { startTime = Date.now(); timerInterval = setInterval(this.update, 1000); },
+    update() {
+      elapsedTime = Math.floor((Date.now() - startTime) / 1000);
+      const m = Math.floor(elapsedTime / 60).toString().padStart(2, '0');
+      const s = (elapsedTime % 60).toString().padStart(2, '0');
+      elements.timer.textContent = `${m}:${s}`;
+    },
+    stop() { clearInterval(timerInterval); },
+    formatTime(sec) {
+      const m = Math.floor(sec / 60);
+      const s = Math.floor(sec % 60);
+      return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+    }
+  };
+
+  function updateAndDisplayCurrentQuestionStayTime() {
+    if (currentQuestionIdForStayTime && currentQuestionActiveStartTime > 0) {
+        const timeSpentSinceActive = (Date.now() - currentQuestionActiveStartTime) / 1000;
+        const totalAccumulatedTime = (perQuestionStayTimes[currentQuestionIdForStayTime] || 0) + timeSpentSinceActive;
+        elements.currentQuestionStayTimer.textContent = timerFunctions.formatTime(totalAccumulatedTime);
+    }
+  }
+
+  function pauseAndRecordStayTime() {
+    if (currentQuestionIdForStayTime && currentQuestionActiveStartTime > 0) {
+      const timeSpentNow = (Date.now() - currentQuestionActiveStartTime) / 1000;
+      perQuestionStayTimes[currentQuestionIdForStayTime] = (perQuestionStayTimes[currentQuestionIdForStayTime] || 0) + timeSpentNow;
+    }
+    currentQuestionActiveStartTime = 0;
+    if (activeQuestionStayTimerInterval) {
+      clearInterval(activeQuestionStayTimerInterval);
+      activeQuestionStayTimerInterval = null;
+    }
+  }
+
+  function resetGame() {
+    if(randomizeQuestions) { questions.sort(() => Math.random() - 0.5); }
+    currentQuestion = 0; score = 0; elapsedTime = 0; gameOver = false;
+    userAnswers = []; selectedOptions = [];
+    perQuestionStayTimes = {};
+    currentQuestionIdForStayTime = null;
+    currentQuestionActiveStartTime = 0;
+    if(activeQuestionStayTimerInterval) clearInterval(activeQuestionStayTimerInterval);
+    elements.timer.textContent = "00:00";
+    elements.currentQuestionStayTimer.textContent = "00:00";
+    updateProgressBar(0, questions.length);
+  }
+
+  function updateProgressBar(currentQNum, totalQNum) {
+    const progress = totalQNum > 0 ? (currentQNum / totalQNum) * 100 : 0;
+    elements.progressBar.style.width = `${Math.min(progress, 100)}%`;
+    elements.progressIndicator.textContent = `${Math.min(currentQNum, totalQNum)}/${totalQNum}`;
+  }
+
+  function saveUserAnswer(questionIndex, userAnswerValue) {
+    const questionId = questions[questionIndex].id;
+    const existingAnswerIndex = userAnswers.findIndex(ua => ua.questionId === questionId);
+    const answerData = { questionId: questionId, questionIndex: questionIndex, userAnswer: userAnswerValue };
+    if (existingAnswerIndex > -1) userAnswers[existingAnswerIndex] = answerData;
+    else userAnswers.push(answerData);
+  }
+
+  function loadQuestion(qIndex) {
+    selectedOptions = [];
+    const q = questions[qIndex];
+    if(!q) { endGame(true); return; }
+
+    currentQuestionIdForStayTime = q.id.toString();
+    if (perQuestionStayTimes[currentQuestionIdForStayTime] === undefined) {
+      perQuestionStayTimes[currentQuestionIdForStayTime] = 0;
+    }
+
+    elements.questionNumber.textContent = `문제 ${qIndex + 1}`;
+    elements.currentQuestionStayTimer.textContent = timerFunctions.formatTime(perQuestionStayTimes[currentQuestionIdForStayTime]);
+    currentQuestionActiveStartTime = Date.now();
+    if (activeQuestionStayTimerInterval) clearInterval(activeQuestionStayTimerInterval);
+    activeQuestionStayTimerInterval = setInterval(updateAndDisplayCurrentQuestionStayTime, 1000);
+
+    updateProgressBar(qIndex + 1, questions.length);
+
+    if(q.passage) { elements.passage.style.display = 'block'; elements.passage.innerHTML = `<img src="${q.passage}" alt="보기" style="width:100%;">`; elements.question.classList.add('with-passage'); }
+    else { elements.passage.style.display = 'none'; elements.question.classList.remove('with-passage'); }
+
+    elements.questionImages.innerHTML = "";
+    const imgContainer = document.createElement('div');
+    imgContainer.className = "image-container";
+    q.images.forEach((imgUrl, idx) => {
+      const img = document.createElement('img');
+      img.src = imgUrl; img.alt = `문제 ${qIndex + 1} 이미지 ${idx + 1}`; img.className = "question-image";
+      imgContainer.appendChild(img);
+    });
+    elements.questionImages.appendChild(imgContainer);
+
+    elements.multipleChoice.innerHTML = ""; elements.multipleChoice.style.display = "none";
+    elements.shortAnswer.innerHTML = ""; elements.shortAnswer.style.display = "none";
+    const previousAnswerData = userAnswers.find(ua => ua.questionId === q.id);
+
+    if(q.type === "객관식") {
+      elements.multipleChoice.style.display = "flex";
+      let optionsToShow = q.customOptions && Array.isArray(q.customOptions) && q.customOptions.length > 0
+                        ? q.customOptions.slice(0, 5) : ["1", "2", "3", "4", "5"];
+      elements.multipleChoice.classList.remove('vertical');
+      optionsToShow.forEach((optText, index) => {
+        const optDiv = document.createElement('div');
+        optDiv.className = "option";
+        const optionValue = (index + 1).toString();
+        optDiv.setAttribute("data-option", optionValue);
+        if (q.customOptions) {
+            optDiv.classList.add("has-latex");
+            let processedText = optText.replace(/\\Wlim/g, '\\lim').replace(/\\Wto/g, '\\to').replace(/\\Winfty/g, '\\infty').replace(/\\Walpha/g, '\\alpha').replace(/\\Wbeta/g, '\\beta');
+            optDiv.innerHTML = `$${processedText}$`;
+            if (typeof MathJax !== 'undefined' && MathJax.typesetPromise) { MathJax.typesetPromise([optDiv]).catch(err => { console.error("MathJax err:", err); optDiv.textContent = optText; }); }
+            else if (typeof MathJax !== 'undefined' && MathJax.Hub && MathJax.Hub.Queue) { MathJax.Hub.Queue(["Typeset", MathJax.Hub, optDiv]); }
+            else { optDiv.textContent = optText; }
+        } else { optDiv.textContent = optText; }
+
+        if (previousAnswerData && previousAnswerData.userAnswer !== undefined) {
+            if (Array.isArray(q.answer) && q.answer.length > 1) {
+                if (Array.isArray(previousAnswerData.userAnswer) && previousAnswerData.userAnswer.includes(optionValue)) {
+                    optDiv.classList.add('selected'); selectedOptions.push(optionValue);
+                }
+            } else { if (previousAnswerData.userAnswer === optionValue) optDiv.classList.add('selected'); }
+        }
+        optDiv.addEventListener('click', handleOptionClick);
+        elements.multipleChoice.appendChild(optDiv);
+      });
+    } else if(q.type === "주관식") {
+      elements.shortAnswer.style.display = "flex";
+      let inputHTML = '<div class="input-answer-fields">';
+      const fixedWidth = "350px";
+      if(Array.isArray(q.answer)) {
+          for(let i = 0; i < Math.min(q.answer.length, 5); i++) {
+              const placeholder = (q.placeholders && Array.isArray(q.placeholders) && q.placeholders[i]) ? q.placeholders[i] : `답변 ${i+1}`;
+              const prevVal = (previousAnswerData && Array.isArray(previousAnswerData.userAnswer) && previousAnswerData.userAnswer[i] !== undefined) ? previousAnswerData.userAnswer[i] : "";
+              inputHTML += `<div style="width: ${fixedWidth}; margin: 5px auto;"><div style="text-align: left; margin-bottom: 3px; font-size: 0.9rem; color: #666;">답변 ${i+1}</div><input class="answer-input short-answer-multi" data-index="${i}" value="${prevVal}" placeholder="${placeholder}" type="text"/></div>`;
+          }
+      } else {
+          let singlePlaceholder = "답을 입력하세요";
+          if (q.placeholders) { if (typeof q.placeholders === 'string') singlePlaceholder = q.placeholders; else if (Array.isArray(q.placeholders) && q.placeholders.length > 0 && q.placeholders[0]) singlePlaceholder = q.placeholders[0];}
+          const prevVal = (previousAnswerData && previousAnswerData.userAnswer !== undefined) ? previousAnswerData.userAnswer : "";
+          inputHTML += `<div style="width: ${fixedWidth}; margin: 5px auto;"><input class="answer-input short-answer-single" value="${prevVal}" placeholder="${singlePlaceholder}" type="text"/></div>`;
+      }
+      inputHTML += '</div>'; elements.shortAnswer.innerHTML = inputHTML;
+      document.querySelectorAll('.answer-input').forEach(input => input.addEventListener('input', handleShortAnswerInput));
+    }
+    elements.prevButton.style.display = (qIndex === 0) ? 'none' : 'inline-block';
+    elements.nextButton.textContent = (qIndex === questions.length - 1) ? COMPLETE_BUTTON_TEXT : NEXT_BUTTON_TEXT;
+    if (qIndex === questions.length - 1) elements.nextButton.classList.add('complete-button');
+    else elements.nextButton.classList.remove('complete-button');
+  }
+
+  function handleOptionClick(e) { if(gameOver) return; const selectedOptionDiv = e.currentTarget; const q = questions[currentQuestion]; const userAnswer = selectedOptionDiv.getAttribute('data-option'); if(Array.isArray(q.answer) && q.answer.length > 1) { if(selectedOptions.includes(userAnswer)) { selectedOptions = selectedOptions.filter(opt => opt !== userAnswer); selectedOptionDiv.classList.remove("selected"); } else { selectedOptions.push(userAnswer); selectedOptionDiv.classList.add("selected"); } saveUserAnswer(currentQuestion, selectedOptions.slice()); } else { elements.multipleChoice.querySelectorAll('.option.selected').forEach(opt => opt.classList.remove('selected')); selectedOptionDiv.classList.add("selected"); saveUserAnswer(currentQuestion, userAnswer); } }
+  function handleShortAnswerInput(e) { if(gameOver) return; const q = questions[currentQuestion]; let answerValue; if(e.target.classList.contains('short-answer-multi')) { answerValue = Array.from(elements.shortAnswer.querySelectorAll('.short-answer-multi')).map(inp => inp.value.trim()); } else { answerValue = e.target.value.trim(); } saveUserAnswer(currentQuestion, answerValue); }
+
+  elements.prevButton.addEventListener('click', () => {
+    if (currentQuestion > 0) {
+      pauseAndRecordStayTime();
+      currentQuestion--;
+      loadQuestion(currentQuestion);
+    }
+  });
+
+  elements.nextButton.addEventListener('click', async () => { // '완료' 버튼에 전송 기능 통합
+    pauseAndRecordStayTime();
+    if (elements.nextButton.classList.contains('complete-button')) {
+      const unanswered = [];
+      for (let i = 0; i < questions.length; i++) {
+          const q_id = questions[i].id;
+          const answeredEntry = userAnswers.find(ua => ua.questionId === q_id);
+          let isActuallyAnswered = false;
+          if (answeredEntry && answeredEntry.userAnswer !== undefined) {
+              if (Array.isArray(answeredEntry.userAnswer)) { isActuallyAnswered = answeredEntry.userAnswer.some(a => a !== null && String(a).trim() !== ''); }
+              else { isActuallyAnswered = String(answeredEntry.userAnswer).trim() !== ''; }
+          }
+          if (!isActuallyAnswered) unanswered.push(i + 1);
+      }
+      if (unanswered.length > 0) {
+        const confirmation = confirm(`${unanswered.join(', ')}번 문제에 답을 입력하지 않았습니다. 이대로 완료하시겠습니까?`);
+        if (!confirmation) {
+            currentQuestionActiveStartTime = Date.now();
+            if (activeQuestionStayTimerInterval) clearInterval(activeQuestionStayTimerInterval);
+            activeQuestionStayTimerInterval = setInterval(updateAndDisplayCurrentQuestionStayTime, 1000);
+            return;
+        }
+      }
+      // 시험 결과 화면 표시
+      endGame(true);
+      // 결과 전송 시도
+      await sendResultData(); // 결과 전송 함수 호출
+    } else {
+      if (currentQuestion < questions.length - 1) {
+        currentQuestion++;
+        loadQuestion(currentQuestion);
+      }
+    }
+  });
+
+  elements.startButton.addEventListener('click', () => { const name = elements.playerName.value.trim(); if(name === "") { alert("이름을 입력해주세요!"); return; } player = name; elements.startSection.style.display = "none"; elements.gameSection.style.display = "block"; timerFunctions.start(); resetGame(); loadQuestion(currentQuestion); });
+
+  async function sendDataWithRetry(url, data, { timeout = 5000, retries = 3 } = {}) {
+    for (let attempt = 1; attempt <= retries; attempt++) {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), timeout);
+      try {
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+          signal: controller.signal
+        });
+        clearTimeout(timer);
+        const contentType = response.headers.get("content-type");
+        if (response.ok && contentType && contentType.indexOf("application/json") !== -1) {
+          return await response.json();
+        } else if (response.ok) {
+          console.log("Server returned OK but not JSON:", await response.text());
+          return { success: true, message: "Data sent, but response format unclear." };
+        } else {
+          console.error(`Server error: ${response.status} ${response.statusText}`);
+          throw new Error(`${ERROR_MESSAGE} (Status: ${response.status})`);
+        }
+      } catch (error) {
+        clearTimeout(timer);
+        console.error(`Attempt ${attempt} failed:`, error);
+        if (attempt === retries) {
+          if (error.name === 'AbortError') throw new Error(NETWORK_ERROR + " (Timeout)");
+          throw error;
+        }
+        await new Promise(res => setTimeout(res, 1000 * Math.pow(2, attempt - 1)));
+      }
+    }
+  }
+
+  async function sendResultData() {
+    const game = gameConfig.gameTitle;
+    const finalScoreValue = score;
+    const finalElapsedTimeValue = elapsedTime;
+
+    if (!player) {
+      elements.serverMessage.textContent = "플레이어 이름 정보가 없습니다. 새로고침 후 다시 시도해주세요.";
+      elements.serverMessage.classList.add("error");
+      return;
+    }
+
+    elements.loadingSpinner.style.display = "flex";
+    elements.serverMessage.textContent = "";
+    elements.serverMessage.className = "server-message";
+
+    let sendSuccess = false;
+    let errorMessage = "";
+
+    try {
+      const dataToSend = {
+        game: game,
+        name: player,
+        score: parseInt(finalScoreValue, 10),
+        maxScore: questions.reduce((sum, q) => sum + (q.score || defaultScore), 0),
+        elapsedTime: parseInt(finalElapsedTimeValue, 10)
+      };
+      console.log("Sending data:", dataToSend);
+      const result = await sendDataWithRetry("https://us-central1-record-f420d.cloudfunctions.net/report", dataToSend, { timeout: 8000, retries: 2 });
+      console.log("Server response:", result);
+      elements.serverMessage.textContent = SUCCESS_MESSAGE;
+      elements.serverMessage.classList.add("success");
+      sendSuccess = true;
+    } catch (error) {
+      console.error("Submission failed:", error);
+      errorMessage = error.message || ERROR_MESSAGE;
+      elements.serverMessage.textContent = errorMessage;
+      elements.serverMessage.classList.add("error");
+      sendSuccess = false;
+    } finally {
+      elements.loadingSpinner.style.display = "none";
+    }
+
+    if (!sendSuccess) {
+      const retryConfirmation = confirm(`데이터 전송에 실패했습니다: ${errorMessage}\n다시 시도하시겠습니까?`);
+      if (retryConfirmation) {
+        await sendResultData(); // 재귀적으로 재시도
+      }
+    }
+  }
+
+  function endGame(completed) {
+    gameOver = true;
+    timerFunctions.stop();
+    pauseAndRecordStayTime();
+
+    elements.gameSection.style.display = "none";
+    elements.resultSection.style.display = "block";
+
+    let totalAchievedScore = 0;
+    const maxPossibleScore = questions.reduce((sum, q) => sum + (q.score || defaultScore), 0);
+
+    let tableHTML = `<table class="answer-table"><thead><tr><th>번호</th><th>결과</th><th>내 답</th><th>정답</th><th>풀이 시간</th></tr></thead><tbody>`;
+
+    for (let i = 0; i < questions.length; i++) {
+        const question = questions[i];
+        const userAnswerData = userAnswers.find(ua => ua.questionId === question.id);
+        let userAnswerDisplay = "미응시";
+        let isThisCorrect = false;
+        let rowClass = "unanswered-row";
+
+        const correctAnswerString = Array.isArray(question.answer) ? question.answer.map(String).join(', ') : String(question.answer);
+        const stayTimeSeconds = perQuestionStayTimes[question.id.toString()] || 0;
+        const stayTimeDisplay = timerFunctions.formatTime(stayTimeSeconds);
+
+        if (userAnswerData && userAnswerData.userAnswer !== undefined) {
+            const uaValue = userAnswerData.userAnswer;
+            let tempUserAnswerDisplay = "";
+            if (Array.isArray(uaValue)) {
+                tempUserAnswerDisplay = uaValue.map(String).filter(a => a.trim() !== '').join(', ');
+                if (tempUserAnswerDisplay === "") tempUserAnswerDisplay = "미응시";
+                if (tempUserAnswerDisplay !== "미응시") {
+                    const qAnsArray = Array.isArray(question.answer) ? question.answer.map(String) : [String(question.answer)];
+                    isThisCorrect = JSON.stringify(uaValue.map(String).sort()) === JSON.stringify(qAnsArray.sort());
+                }
+            } else {
+                tempUserAnswerDisplay = String(uaValue).trim();
+                if (tempUserAnswerDisplay === "") tempUserAnswerDisplay = "미응시";
+                if (tempUserAnswerDisplay !== "미응시") isThisCorrect = tempUserAnswerDisplay === String(question.answer).trim();
+            }
+            userAnswerDisplay = tempUserAnswerDisplay;
+            if (userAnswerDisplay !== "미응시") {
+                if (isThisCorrect) {
+                    totalAchievedScore += (question.score || defaultScore);
+                    rowClass = "correct-answer-row";
+                } else { rowClass = "incorrect-answer-row"; }
+            }
+        }
+        tableHTML += `<tr class="${rowClass}"><td>${i + 1}</td><td>${userAnswerDisplay === "미응시" ? "미응시" : (isThisCorrect ? "정답" : "오답")}</td><td class="user-answer-col">${userAnswerDisplay}</td><td class="correct-answer-col">${correctAnswerString}</td><td>${stayTimeDisplay}</td></tr>`;
+    }
+    tableHTML += `</tbody></table>`;
+    score = totalAchievedScore;
+
+    // 정답률 표시 없이 점수만 표시
+    elements.finalScoreDisplay.innerHTML = `최종 점수: <strong style="color: var(--score-highlight-color); font-size: 1.2em;">${score}</strong>점 / ${maxPossibleScore}점`;
+    elements.answerTableContainer.innerHTML = tableHTML;
+    elements.finalTime.textContent = `총 소요 시간: ${timerFunctions.formatTime(elapsedTime)}`;
+    // elements.submitButton.disabled = false; // 삭제됨
+    elements.serverMessage.textContent = ''; elements.serverMessage.className = 'server-message';
+  }
+
+  window.onload = () => {
+    document.getElementById("pageTitle").textContent = gameTitle;
+    elements.gameTitle.innerHTML = gameTitle;
+    if (typeof MathJax !== 'undefined' && MathJax.typesetPromise) { MathJax.typesetPromise([elements.gameTitle]).catch(console.error); }
+    else if (typeof MathJax !== 'undefined' && MathJax.Hub && MathJax.Hub.Queue) { MathJax.Hub.Queue(["Typeset", MathJax.Hub, elements.gameTitle]); }
+    elements.startButton.textContent = START_BUTTON_TEXT;
+    elements.playerName.placeholder = PLAYER_NAME_PLACEHOLDER;
+    document.querySelector('#startSection .start-title').textContent = START_SCREEN_TITLE;
+    elements.prevButton.textContent = PREV_BUTTON_TEXT;
+    elements.nextButton.textContent = NEXT_BUTTON_TEXT;
+    // elements.submitButton.textContent = SUBMIT_BUTTON_TEXT; // 삭제됨
+    document.querySelector('#resultSection .result-title').textContent = RESULT_TITLE_TEXT;
+    if (bannerURL) { elements.banner.style.display = "block"; elements.banner.innerHTML = `<img src="${bannerURL}" alt="배너">`; }
+  };
+ </script>
+</body>
+</html>
